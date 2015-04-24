@@ -617,7 +617,7 @@ void CGetCommand::Execute (po::variables_map const & options, std::vector<po::op
   fs::path physPath;
   fs::path destPath;
 
-  fs::path::default_name_check (fs::native);
+  //fs::path::default_name_check (fs::native);
 
   if (options.count("version"))
     m_Version = options["version"].as<int>();
